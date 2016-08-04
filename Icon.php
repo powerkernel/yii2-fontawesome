@@ -18,6 +18,7 @@ use yii\helpers\Html;
 class Icon extends Widget
 {
     public $icon = ''; // see http://fontawesome.io/examples/
+    public $options = []; //eg: ['options' => ['size' => 'fa-2x']]
 
 
     /**
@@ -37,6 +38,8 @@ class Icon extends Widget
      */
     public function run()
     {
+        //setting size property - fa-lg, fa-2x etc
+        $sizeClass = isset($this->options['size']) ? ' ' . $this->options['size'] : '';
         echo Html::tag('i', '', [
             'class' => 'fa fa-' . $this->icon,
             'aria-hidden' => true
