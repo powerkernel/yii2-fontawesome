@@ -5,7 +5,7 @@
  * @copyright Copyright (c) 2017 Power Kernel
  */
 
-namespace modernkernel\fontawesome;
+namespace powerkernel\fontawesome;
 
 
 use yii\base\Widget;
@@ -13,7 +13,7 @@ use yii\helpers\Html;
 
 /**
  * Class Icon
- * @package modernkernel\fontawesome
+ * @package powerkernel\fontawesome
  */
 class Icon extends Widget
 {
