@@ -1,5 +1,5 @@
 {
-    "name": "modernkernel/yii2-fontawesome",
+    "name": "powerkernel/yii2-fontawesome",
     "description": "Font Awesome extension for Yii2",
     "type": "yii2-extension",
     "keywords": ["yii2","extension"],
@@ -7,16 +7,16 @@
     "authors": [
         {
             "name": "Harry Tang",
-            "email": "harry@modernkernel.com"
+            "email": "harry@powerkernel.com"
         }
     ],
     "require": {
-        "yiisoft/yii2": "*",
-        "bower-asset/font-awesome":"*"
+        "yiisoft/yii2": "~2.0",
+        "bower-asset/font-awesome":"~4.0"
     },
     "autoload": {
         "psr-4": {
-            "modernkernel\\fontawesome\\": ""
+            "powerkernel\\fontawesome\\": ""
         }
     }
 }
