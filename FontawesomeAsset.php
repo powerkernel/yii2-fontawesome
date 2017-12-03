@@ -5,14 +5,14 @@
  * @copyright Copyright (c) 2017 Power Kernel
  */
 
-namespace modernkernel\fontawesome;
+namespace powerkernel\fontawesome;
 
 
 use yii\web\AssetBundle;
 
 /**
  * Class FontawesomeAsset
- * @package modernkernel\fontawesome
+ * @package powerkernel\fontawesome
  */
 class FontawesomeAsset extends AssetBundle
 {
