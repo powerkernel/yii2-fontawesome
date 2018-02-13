@@ -16,7 +16,7 @@
     },
     "autoload": {
         "psr-4": {
-            "powerkernel\\fontawesome\\": ""
+            "powerkernel\\fontawesome\\": "src"
         }
     }
 }
