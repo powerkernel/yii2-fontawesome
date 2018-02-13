@@ -2,6 +2,10 @@ Yii2 Font Awesome
 =================
 Font Awesome extension for Yii2
 
+[![Latest Stable Version](https://poser.pugx.org/powerkernel/yii2-fontawesome/v/stable)](https://packagist.org/packages/powerkernel/yii2-fontawesome)
+[![Total Downloads](https://poser.pugx.org/powerkernel/yii2-fontawesome/downloads)](https://packagist.org/packages/powerkernel/yii2-fontawesome)
+[![Build Status](https://travis-ci.org/powerkernel/yii2-fontawesome.svg?branch=master)](https://travis-ci.org/powerkernel/yii2-fontawesome)
+
 Installation
 ------------
 
