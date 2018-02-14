@@ -18,9 +18,7 @@ install:
   - travis_retry composer install --prefer-dist --no-interaction
 
 before_script:
-  - |
-    if [ $TRAVIS_PHP_VERSION = '5.6' ]; then
-      PHPUNIT_FLAGS="--coverage-clover=coverage.clover"
-    fi
+  - mkdir tests/assets
+  
 script:
   - phpunit $PHPUNIT_FLAGS
