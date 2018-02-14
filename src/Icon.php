@@ -2,7 +2,7 @@
 /**
  * @author Harry Tang <harry@powerkernel.com>
  * @link https://powerkernel.com
- * @copyright Copyright (c) 2017 Power Kernel
+ * @copyright Copyright (c) 2017-2018 Power Kernel
  */
 
 namespace powerkernel\fontawesome;
@@ -17,8 +17,12 @@ use yii\helpers\Html;
  */
 class Icon extends Widget
 {
-    public $icon = ''; // see http://fontawesome.io/examples/
-
+    public $tag = 'i';
+    public $prefix = 'far'; // fab, fas, far, fal
+    public $name = ''; // see https://fontawesome.com/icons
+    public $size = ''; // fa-xs, fa-sm, fa-lg, fa-2x, fa-3x, fa-4x, fa-5x, fa-7x, fa-10x
+    public $styling = ''; // additional styling: fa-fw, fa-ul, fa-li etc. https://fontawesome.com/how-to-use/svg-with-js
+    public $options = [];
 
     /**
      * Initializes the widget.
@@ -28,8 +32,6 @@ class Icon extends Widget
     {
         parent::init();
         $this->register();
-
-
     }
 
     /**
@@ -37,11 +39,14 @@ class Icon extends Widget
      */
     public function run()
     {
-        echo Html::tag('i', '', [
-            'class' => 'fa fa-' . $this->icon,
-            'aria-hidden' => true
-        ]);
-
+        $class = $this->prefix . ' fa-' . $this->name . ' ' . $this->size . ' ' . $this->styling;
+        $class = trim(preg_replace('/\s+/', ' ', $class));
+        if (empty($this->options['class'])) {
+            $this->options['class'] = $class;
+        } else {
+            $this->options['class'] .= ' ' . $class;
+        }
+        echo Html::tag($this->tag, '', $this->options);
     }
 
     /**
@@ -50,6 +55,6 @@ class Icon extends Widget
     protected function register()
     {
         $view = $this->getView();
-        FontawesomeAsset::register($view);
+        FontAwesomeAsset::register($view);
     }
 }

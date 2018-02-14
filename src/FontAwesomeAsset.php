@@ -11,13 +11,13 @@ namespace powerkernel\fontawesome;
 use yii\web\AssetBundle;
 
 /**
- * Class FontawesomeAsset
+ * Class FontAwesomeAsset
  * @package powerkernel\fontawesome
  */
-class FontawesomeAsset extends AssetBundle
+class FontAwesomeAsset extends AssetBundle
 {
     public $sourcePath = '@bower/font-awesome';
-    public $css = [
-        'css/font-awesome.min.css',
+    public $js = [
+        'svg-with-js/js/fontawesome-all.min.js',
     ];
 } 
