@@ -1,4 +1,4 @@
-The Yii framework is free software. It is released under the terms of
+The Yii2 Font Awesome is free software. It is released under the terms of
 the following BSD License.
 
 Copyright © 20017-2018 by Power Kernel (https://powerkernel.com)
