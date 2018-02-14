@@ -32,5 +32,10 @@ Usage
 Once the extension is installed, simply use it in your code by  :
 
 ```php
-<?= \powerkernel\fontawesome\Icon::widget(['icon'=>'university']) ?>
+<?= \powerkernel\fontawesome\Icon::widget([
+        'prefix'=>'far',
+        'name' => 'address-book',
+        'size'=>'fa-5x',
+        'styling'=>'fa-spin'
+    ]) ?>
 ```

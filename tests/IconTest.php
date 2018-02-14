@@ -30,10 +30,13 @@ class IconTest extends TestCase
     public function testRender()
     {
         $widget = new Icon([
-            'icon' => 'tachometer-alt',
+            'prefix'=>'far',
+            'name' => 'address-book',
+            'size'=>'fa-5x',
+            'styling'=>'fa-spin'
         ]);
         $output = $widget->run();
-        $this->assertEquals('<input type="text" id="test-fontawesome-input" class="form-control" name="phone" data-plugin-inputmask="inputmask_7b93eb48">', (string)$output);
+        $this->assertEquals('<i class="far fa-address-book fa-5x fa-spin"></i>', (string)$output);
     }
 
 
