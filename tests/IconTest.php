@@ -39,6 +39,4 @@ class IconTest extends TestCase
         $output = $widget->run();
         $this->assertEquals('<i class="far fa-address-book fa-5x fa-spin"></i>', (string)$output);
     }
-
-
 }

@@ -46,7 +46,7 @@ class Icon extends Widget
         } else {
             $this->options['class'] .= ' ' . $class;
         }
-        echo Html::tag($this->tag, '', $this->options);
+        return Html::tag($this->tag, '', $this->options);
     }
 
     /**
