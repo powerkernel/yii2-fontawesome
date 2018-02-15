@@ -14,13 +14,13 @@ The preferred way to install this extension is through [composer](http://getcomp
 Either run
 
 ```
-php composer.phar require --prefer-dist powerkernel/yii2-fontawesome "*"
+php composer.phar require powerkernel/yii2-fontawesome "~2.0"
 ```
 
 or add
 
 ```
-"powerkernel/yii2-fontawesome": "*"
+"powerkernel/yii2-fontawesome": "~2.0"
 ```
 
 to the require section of your `composer.json` file.
@@ -32,10 +32,12 @@ Usage
 Once the extension is installed, simply use it in your code by  :
 
 ```php
-<?= \powerkernel\fontawesome\Icon::widget([
+<?= 
+    \powerkernel\fontawesome\Icon::widget([
         'prefix'=>'far',
         'name' => 'address-book',
         'size'=>'fa-5x',
         'styling'=>'fa-spin'
-    ]) ?>
+    ]) 
+?>
 ```
