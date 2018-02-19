@@ -55,6 +55,11 @@ class Icon extends Widget
     protected function register()
     {
         $view = $this->getView();
-        FontAwesomeAsset::register($view);
+        if (class_exists('\powerkernel\fontawesomepro\FontAwesomeProAsset')) {
+            \powerkernel\fontawesomepro\FontAwesomeProAsset::register($view);
+        } else {
+            \powerkernel\fontawesome\FontAwesomeAsset::register($view);
+        }
+
     }
 }
