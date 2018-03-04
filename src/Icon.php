@@ -18,7 +18,7 @@ use yii\helpers\Html;
 class Icon extends Widget
 {
     public $tag = 'i';
-    public $prefix = 'far'; // fab, fas, far, fal
+    public $prefix = 'fas'; // fab, fas, far, fal
     public $name = ''; // see https://fontawesome.com/icons
     public $size = ''; // fa-xs, fa-sm, fa-lg, fa-2x, fa-3x, fa-4x, fa-5x, fa-7x, fa-10x
     public $styling = ''; // additional styling: fa-fw, fa-ul, fa-li etc. https://fontawesome.com/how-to-use/svg-with-js
