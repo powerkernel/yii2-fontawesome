@@ -34,10 +34,12 @@ Once the extension is installed, simply use it in your code by  :
 ```php
 <?= 
     \powerkernel\fontawesome\Icon::widget([
-        'prefix'=>'far',
-        'name' => 'address-book',
-        'size'=>'fa-5x',
-        'styling'=>'fa-spin'
+        'prefix'=>'fas', // Optional, can be fab, fas, far or fal
+        'name' => 'address-book', // icon name
+        'size'=>'fa-5x', // Optional
+        'styling'=>'fa-spin' // Optional
     ]) 
 ?>
 ```
+For more details about how to use, see: https://fontawesome.com/how-to-use
+
