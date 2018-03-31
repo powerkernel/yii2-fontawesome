@@ -17,7 +17,10 @@ use yii\web\AssetBundle;
 class FontAwesomeAsset extends AssetBundle
 {
     public $sourcePath = '@bower/font-awesome';
-    public $js = [
-        'svg-with-js/js/fontawesome-all.min.js',
+//    public $js = [
+//        'svg-with-js/js/fontawesome-all.min.js',
+//    ];
+    public $css = [
+        'web-fonts-with-css/css/fontawesome-all.min.css',
     ];
-} 
+}
