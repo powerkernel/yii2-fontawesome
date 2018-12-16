@@ -21,6 +21,6 @@ class FontAwesomeAsset extends AssetBundle
 //        'svg-with-js/js/fontawesome-all.min.js',
 //    ];
     public $css = [
-        'web-fonts-with-css/css/fontawesome-all.min.css',
+        'css/all.min.css',
     ];
 }
